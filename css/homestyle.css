@@ -1,0 +1,151 @@
+body {
+    font-family: 'Open Sans';
+    background-color: #3F5CD0;
+}
+
+#logo {
+    width: 150px;
+}
+
+#logo {
+    animation: logoAnimation 2s;
+}
+
+@keyframes logoAnimation {
+    from {
+        width: 25px;
+        opacity: 0;
+    }
+
+    to {
+        width: 150px;
+        opacity: 1;
+    }
+}
+
+
+header {
+    padding-top: 200px;
+    background-color: #3F5CD0;
+
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav_links {
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav_item a {
+    border: 2px solid #50C7C7;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+nav .active {
+    color: #ffffff;
+    /* text-decoration: underline; */
+    font-weight: bolder;
+    background: #50C7C7;
+    border-radius: 10px;
+    /*border: 4px dotted #ffffff;*/
+    /* -webkit-text-decoration-style: dotted;
+    text-decoration-style: dotted; */
+}
+
+.nav_item a:hover,
+a:focus {
+    color: #000000;
+    text-decoration: underline;
+    -webkit-text-decoration-style: dotted;
+    text-decoration-style: dotted;
+}
+
+/*prefers reduced motion*/
+@media screen and (prefers-reduced-motion: reduce) {
+
+    /*taking away logo animation*/
+    #logo {
+        animation: logoAnimation none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .nav_links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #3F5CD0;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 40px;
+    }
+
+
+    nav {
+        /* background-color: #ffffff; */
+        position: fixed;
+        /* Set the navbar to fixed position */
+        bottom: 0;
+        /* Position the navbar at the bottom of the page */
+        width: 100%;
+        /* Full width */
+        /*padding: 200px 0px 400px 0px;*/
+    }
+
+    .nav_links {
+        padding: 200px 0px 100px 0px;
+    }
+}
+
+/*screen size 900px minimum*/
+@media screen and (min-width: 900px) {
+
+    /*shifting logo to the left*/
+    #logo {
+        justify-content: center;
+        top: 0;
+    }
+
+    /*shifting navigation to the right*/
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 30px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #3F5CD0;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        align-items: right;
+        margin-bottom: 40px;
+    }
+
+    .nav_links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}

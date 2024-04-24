@@ -1,0 +1,814 @@
+body {
+    font-family: 'Open Sans';
+}
+
+h5{
+padding: 20px;
+}
+
+.floating:hover {
+    cursor: url("../images/New_Cursor.png"), auto;
+}
+
+.icon:hover {
+    cursor: url("../images/New_Cursor.png"), auto;
+}
+
+
+img:hover {
+    cursor: url("../images/Star_Cursor.png"), auto;
+}
+
+
+/*slider*/
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.container {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100%;
+    background: white;
+    background-image: url("../images/Awake_Me.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.container:hover {
+    cursor: url("../images/New_Cursor.png"), auto;
+}
+
+input:checked+label+.container {
+    background: #242424;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #9b9e05;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #9b9e05;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/*slider ends*/
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #9b9e05;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.form-container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/*flipbook*/
+
+
+#logo {
+    width: 100px;
+}
+
+header {
+    background-color: #9b9e05;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav_links {
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav .active {
+    color: #000000;
+    text-decoration: underline;
+    background: #d7df92;
+    border-radius: 10px;
+    /*border: 4px dotted #ffffff;*/
+    -webkit-text-decoration-style: dotted;
+    text-decoration-style: dotted;
+}
+
+.container {
+    display: grid;
+    grid-row-gap: 20px;
+    grid-column-gap: 10px;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+/* Bottom left text */
+.containername {
+    color: black;
+    font-size: larger;
+    position: absolute;
+    top: 80px;
+    right: 16px;
+}
+
+/*switch*/
+/* The switch - the box around the slider */
+.switch {
+    grid-row: 1/2;
+    grid-column: 3/3;
+    padding-right: 10px;
+
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.projects {
+    display: grid;
+    justify-items: center;
+    grid-row: 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+/*farmstop*/
+/* Container needed to position the button. Adjust the width as needed */
+.farmstop,
+.icons,
+.readyroots,
+.pcc {
+    position: relative;
+    width: 50%;
+}
+
+/* Make the image responsive */
+.farmstop img,
+.icons img,
+.readyroots img,
+.pcc img {
+    width: 100%;
+    height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.farmstop a,
+.icons a,
+.readyroots a,
+.pcc a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    background-color: #9b9e05;
+    opacity: 10%;
+    padding: 50%;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.farmstop a:hover,
+.icons a:hover,
+.readyroots a:hover,
+.pcc a:hover {
+    opacity: 80%;
+    padding: 50%;
+    background-color: black;
+    border: white 5px solid;
+}
+
+/*about*/
+.about-intro {
+    display: grid;
+    grid-row-gap: 20px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+.about-name-intro {
+    padding-top: 20px;
+    grid-column: 1/1;
+    grid-row: 1/5;
+}
+
+.about-p1 {
+    grid-column: 1/1;
+    grid-row: 4/5;
+}
+
+.about-p2 {
+    grid-column: 1/1;
+    grid-row: 5/5;
+}
+
+.about-p3 {
+    align-items: center;
+    padding-top: 80px;
+    grid-column: 1/1;
+    grid-row: 1/5;
+}
+
+
+.floating {
+    grid-column: 1/1;
+    grid-row: 2/5;
+    position: relative;
+    width: 50%;
+}
+
+
+/*prefers reduced motion*/
+@media screen and (prefers-reduced-motion: reduce) {
+
+    /*taking away logo animation*/
+    #logo {
+        animation: logoAnimation none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 300px 0px 14px 0px;
+        margin: 0 auto;
+        background: white;
+        background-image: url("../images/Awake_Me.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    input:checked+label+.container {
+        background: #242424;
+    }
+
+    .container {
+        display: grid;
+        grid-row-gap: 20px;
+        grid-column-gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    /*background image and title home*/
+    .container {
+        text-align: center;
+    }
+
+    /* Bottom left text */
+    .containername {
+        color: black;
+        font-size: 20px;
+        position: absolute;
+        top: 60px;
+        right: 16px;
+    }
+
+    .nav_links {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        align-items: right;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        align-items: right;
+    }
+
+
+    nav {
+        background-color: #9b9e05;
+        position: fixed;
+        /* Set the navbar to fixed position */
+        bottom: 0;
+        /* Position the navbar at the bottom of the page */
+        width: 100%;
+        /* Full width */
+        padding: 14px 0px 14px 0px;
+    }
+
+    .farmstop-images,
+    .gallery-icons,
+    .ready-roots-images,
+    .hispanic-images {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 2px;
+        grid-row-gap: 2px;
+    }
+
+    .farmstop-images img,
+    .gallery-icons img,
+    .ready-roots-images img,
+    .hispanic-images img {
+        width: 100%;
+    }
+}
+
+
+
+/*screen size tablet*/
+@media screen and (min-width:768px) and (max-width: 991px) {
+    .nav_links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0px 0px 0px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    nav {
+        background-color: #9b9e05;
+        position: fixed;
+        /* Set the navbar to fixed position */
+        bottom: 0;
+        /* Position the navbar at the bottom of the page */
+        width: 100%;
+        /* Full width */
+        padding: 14px 0px 14px 0px;
+    }
+
+    .container {
+        padding: 0;
+        padding: 500px 0px 14px 0px;
+        margin: 0;
+        width: 100%;
+        margin: 0 auto;
+        min-height: 100%;
+        background: white;
+        background-image: url("../images/Awake_Me.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    input:checked+label+.container {
+        background: #242424;
+    }
+
+    .container {
+        display: grid;
+        grid-row-gap: 20px;
+        grid-column-gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    /*background image and title home*/
+    .container {
+        text-align: center;
+    }
+
+    .projects {
+        display: grid;
+        justify-items: center;
+        grid-row-gap: 100px;
+        grid-row: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    /* Bottom left text */
+    .containername {
+        color: black;
+        font-size: 30pxpx;
+        position: absolute;
+        top: 80px;
+        right: 16px;
+    }
+
+    header {
+        background-color: #9b9e05;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /*navigation bar sticks to the top*/
+    body>header {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+
+    /*about*/
+    .about-intro {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 20px;
+    }
+
+    .about-name-intro {
+        padding-right: 40%;
+        grid-column: 2/2;
+        grid-row: 1/2;
+    }
+
+    .about-p1 {
+        padding-top: 100px;
+        grid-column: 2/2;
+        grid-row: 1/2;
+    }
+
+    .about-p2 {
+        grid-column: 2/2;
+        grid-row: 2/2;
+    }
+
+    .about-p3 {
+        padding-top: 200px;
+        grid-column: 1/2;
+        grid-row: 2/2;
+    }
+
+
+    .floating {
+        grid-column: 1/2;
+        grid-row: 1/span 2;
+        position: relative;
+        width: 50%;
+    }
+
+    /*farmstop*/
+    /* Container needed to position the button. Adjust the width as needed */
+    .farmstop,
+    .icons,
+    .readyroots,
+    .pcc {
+        position: relative;
+        width: 50%;
+    }
+
+    /* Make the image responsive */
+    .farmstop img,
+    .icons img,
+    .readyroots img,
+    .pcc img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Style the button and place it in the middle of the container/image */
+    .farmstop a,
+    .icons a,
+    .readyroots a,
+    .pcc a {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        color: white;
+        font-size: 20px;
+        background-color: #9b9e05;
+        opacity: 10%;
+        padding: 50%;
+        border: none;
+        cursor: pointer;
+        border-radius: 30px;
+        text-decoration: none;
+    }
+
+    .farmstop a:hover,
+    .icons a:hover,
+    .readyroots a:hover,
+    .pcc a:hover {
+        opacity: 80%;
+        padding: 50%;
+        background-color: black;
+        border: white 5px solid;
+    }
+
+    .farmstop-images,
+    .gallery-icons,
+    .ready-roots-images,
+    .hispanic-images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2px;
+        grid-row-gap: 2px;
+    }
+
+    .farmstop-images img,
+    .gallery-icons img,
+    .ready-roots-images img,
+    .hispanic-images img {
+        width: 100%;
+    }
+}
+
+/*screen size 900px minimum*/
+@media screen and (min-width: 991px) {
+    .projects {
+        display: grid;
+        justify-items: center;
+        grid-row-gap: 100px;
+        grid-row: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*background image and title home*/
+    .container {
+        position: absolute;
+        text-align: center;
+    }
+
+    /* Bottom left text */
+    .containername {
+        color: black;
+        font-size: 40px;
+        position: absolute;
+        top: 80px;
+        right: 16px;
+    }
+
+    /*navigation bar sticks to the top*/
+    body>header {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+
+    /*shifting logo to the left*/
+    #logo {
+        justify-content: center;
+        top: 0;
+    }
+
+    /*shifting navigation to the right*/
+    nav {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+
+    .nav_links {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        align-items: right;
+    }
+
+    .nav_links>header {
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        align-items: center;
+    }
+
+    /*shifting logo to the left*/
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .about>header {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+
+    }
+
+    /*about*/
+    .about-intro {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-name-intro {
+
+        padding-right: 40%;
+        grid-column: 2/2;
+        grid-row: 1/2;
+    }
+
+    .about-p1 {
+        padding-top: 100px;
+        grid-column: 2/2;
+        grid-row: 1/2;
+    }
+
+    .about-p2 {
+        grid-column: 2/2;
+        grid-row: 2/2;
+    }
+
+    .about-p3 {
+        padding-top: 200px;
+        grid-column: 2/2;
+        grid-row: 2/2;
+    }
+
+
+    .floating {
+        grid-column: 1/2;
+        grid-row: 1/span 2;
+        position: relative;
+        width: 50%;
+    }
+
+    /*farmstop*/
+    /* Container needed to position the button. Adjust the width as needed */
+    .farmstop,
+    .icons,
+    .readyroots,
+    .pcc {
+        position: relative;
+    }
+
+    /* Make the image responsive */
+    .farmstop img,
+    .icons img,
+    .readyroots img,
+    .pcc img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Style the button and place it in the middle of the container/image */
+    .farmstop a,
+    .icons a,
+    .readyroots a,
+    .pcc a {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        color: white;
+        font-size: 20px;
+        background-color: #9b9e05;
+        opacity: 10%;
+        border: none;
+        cursor: pointer;
+        border-radius: 30px;
+        text-decoration: none;
+    }
+
+    .farmstop a:hover,
+    .icons a:hover,
+    .readyroots a:hover,
+    .pcc a:hover {
+        opacity: 80%;
+        background-color: black;
+        border: white 5px solid;
+    }
+
+    .farmstop-images,
+    .hispanic-images {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 2px;
+        grid-row-gap: 2px;
+    }
+
+    .farmstop-images img,
+    .hispanic-images img {
+        width: 100%;
+    }
+
+    .gallery-icons,
+    .ready-roots-images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2px;
+        grid-row-gap: 2px;
+    }
+
+    .gallery-icons img,
+    .ready-roots-images img {
+        width: 100%;
+    }
+
+}

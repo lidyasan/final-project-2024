@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="dist/css/lightbox.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+  <link rel="stylesheet" type="text/css" href="css/starter.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/javascript.js" defer></script>
+  <link rel="icon" type="image/png" href="/images/me_icon.png">
+  <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/b0f29e9bfe.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+</head>
+
+<body>
+  <header>
+    <a class="skip" href="#skip">Skip to Main Content</a>
+    <img src="images/me_icon.png" alt="" id="logo">
+    <nav>
+      <ul class="nav_links">
+        <li class="nav_item"><a href="index.html" class>Home</a></li>
+        <li class="nav_item"><a href="about.html">About</a></li>
+        <li class="nav_item"><a href="projects.html"class="active">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="about" id="skip">
+    <h1>Icons</h1>
+    <h5>Here are some of my vector drawings. Cute right?</h5>
+
+    <div class="gallery-icons">
+      <a href="images/farmstop_icons.png" target="_blank" data-lightbox="icons" data-title="Farmstop Icons"
+          data-alt="Farmstop icons for presentation use">
+          <img src="images/farmstop_icons.png" width="200" alt="Farmstop icons for presentation use">
+      </a>
+
+      <a href="images/els_icons.png" target="_blank" data-lightbox="icons" data-title="ELS Icons"
+          data-alt="ELS Real Estate Camping Icons">
+          <img src="images/els_icons.png" width="200" alt="ELS Real Estate Camping Icon">
+      </a>
+
+      <a href="images/hispanic_data_icons.jpeg" target="_blank" data-lightbox="icons" data-title="Hispanic Data Visualization Icons"
+          data-alt="Hispanic Data Visualization Icons">
+          <img src="images/hispanic_data_icons.jpeg" width="200" alt="Hispanic Data Visualization Icons">
+      </a>
+
+      <a href="images/hispanic_data_icons_2.jpeg" target="_blank" data-lightbox="icons" data-title="Hispanic Data Visualization Icons"
+          data-alt="Hispanic Data Visualization Icons">
+          <img src="images/hispanic_data_icons_2.jpeg" width="200" alt="Hispanic Data Visualization Icons">
+      </a>
+
+  </div>
+
+  </main>
+
+  <script src="dist/js/lightbox-plus-jquery.js">
+  </script>
+  
+  <script>
+  lightbox.option({
+          'resizeDuration': 200,
+          'wrapAround': true,
+          'positionFromTop': 10,
+          'fadeDuration':1200,
+      })
+  </script>
+
+  <!-- <h1>Home</h1> -->
+
+</body>
+
+</html>

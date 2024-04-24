@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/starter.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="image/png" href="/images/me_icon.png">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+
+<body>
+    <header>
+        <a class="skip" href="#skip">Skip to Main Content</a>
+        <img src="images/me_icon.png" alt="" id="logo">
+        <nav>
+            <ul class="nav_links">
+                <li class="nav_item"><a href="index.html">Home</a></li>
+                <li class="nav_item"><a href="about.html">About</a></li>
+                <li class="nav_item"><a href="projects.html">Projects</a></li>
+                <!-- issue with getting rid of a play.html button  -->
+            </ul>
+        </nav>
+        <!-- div added -->
+    </header>
+    <main class="about" id="skip">
+        <!-- <h1>Start Game</h1> -->
+    </main>
+    <div class="form-container">
+        <form action="action_page.php">
+            <form action="https://formspree.io/f/xwkgwgnv" method="post">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <div class="radio">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <label for="inquiry">Question</label>
+                    <select id="inquiry" name="inquiry">
+                        <option value="question">Question</option>
+                        <option value="request">Hiring Request</option>
+                        <option value="collaboration">Collaboration Request</option>
+                    </select>
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
+                </div>
+
+
+                <input type="submit" value="Submit">
+                
+
+            </form>
+    </div>
+
+    <!-- Form Experiemnet -->
+    <!-- this main end tag wasnt here before idk why -->
+</body>
+
+</html>
